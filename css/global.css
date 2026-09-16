@@ -1,0 +1,93 @@
+:root {
+
+  /* FARGER */
+  --bg-color: #f6f6f6;
+  --primary-color: #125DA8;
+  --primary-hover: #0E4C8A;
+  --secondary-color: #061A30;
+  --secondary-hover: #0B2545;
+  --dark-color: #0B2545;
+  --text-color: #161616;
+  --muted-text: #161616bb;
+  --header-color: white;
+  --delete-hover: #ca1010;
+
+
+  /* FONT */
+  --text-font: "Manrope", sans-serif;
+
+
+  /* FORSLAG TIL SKRIFTSTØRRELSER MOBIL */
+  --h1: 28px;
+  --h2: 24px;
+  --h3: 20px;
+  --h4: 18px;
+  --main-text: 16px;
+
+
+  @media (min-width: 480px) {
+    /* SKRIFTSTØRRELSER DESKTOP */
+    --h1: 32px;
+    --h2: 28px;
+    --h3: 24px;
+    --h4: 20px;
+    --main-text: 18px;
+  }
+}
+
+/* ---GLOBAL STYLING--- */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: var(--text-font);
+}
+
+/* SKRIFTSTØRRELSER*/
+h1 {
+  font-size: var(--h1);
+}
+
+h2 {
+  font-size: var(--h2);
+}
+
+h3 {
+  font-size: var(--h3);
+}
+
+h4 {
+  font-size: var(--h4);
+}
+
+p {
+  font-size: var(--main-text);
+  line-height: 1.5;
+
+}
+
+a {
+    font-family: var(--text-font);
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    width: 100%;
+   padding-inline: 20px;
+}
+
+
+
+
+

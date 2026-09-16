@@ -1,0 +1,42 @@
+.hero {
+  background-color: rgba(60, 60, 60, 0.756);
+  aspect-ratio: auto;
+  min-height: 40vh;
+  padding: 2rem;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-content {
+  padding: 2rem;
+}
+
+.hero-btn {
+  text-decoration: none;
+  color: #f5f5f5;
+  font-weight: 600;
+  background-color: var(--primary-color);
+  position: relative;
+  z-index: 5;
+
+  padding: 0.5rem 1rem;
+  border-radius: 32px;
+  margin-top: 1rem;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.hero-btn:hover {
+  background-color: var(--primary-hover)
+}
+
+.test-section {
+    background-color: var(--secondary-color);
+    height: 300px;
+}
+
+.test-section2 {
+    background-color: var(--dark-color);
+    height: 200px;
+}
