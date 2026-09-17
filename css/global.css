@@ -5,12 +5,10 @@
   --primary-color: #125DA8;
   --primary-hover: #0E4C8A;
   --secondary-color: #061A30;
-  --secondary-hover: #0B2545;
   --dark-color: #0B2545;
   --text-color: #161616;
   --muted-text: #161616bb;
   --header-color: white;
-  --delete-hover: #ca1010;
 
 
   /* FONT */
@@ -25,7 +23,7 @@
   --main-text: 16px;
 
 
-  @media (min-width: 480px) {
+  @media (min-width: 768px) {
     /* SKRIFTSTØRRELSER DESKTOP */
     --h1: 32px;
     --h2: 28px;
@@ -84,7 +82,9 @@ ul {
 
 .container {
     width: 100%;
-   padding-inline: 20px;
+    max-width: 1200px;
+    margin-inline: auto;
+    padding-inline: 20px;
 }
 
 
