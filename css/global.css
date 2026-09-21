@@ -4,6 +4,10 @@
   --bg-color: #f6f6f6;
   --primary-color: #125DA8;
   --primary-hover: #0E4C8A;
+
+  --primary-light: #5DA9E9;
+  --primary-light-hover: #8CC7F5;
+
   --secondary-color: #061A30;
   --dark-color: #0B2545;
   --text-color: #161616;
@@ -16,7 +20,7 @@
 
 
   /* FORSLAG TIL SKRIFTSTØRRELSER MOBIL */
-  --h1: 28px;
+  --h1: 40px;
   --h2: 24px;
   --h3: 20px;
   --h4: 18px;
@@ -25,7 +29,7 @@
 
   @media (min-width: 768px) {
     /* SKRIFTSTØRRELSER DESKTOP */
-    --h1: 32px;
+    --h1: 48px;
     --h2: 28px;
     --h3: 24px;
     --h4: 20px;

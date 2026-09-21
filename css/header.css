@@ -1,1 +1,54 @@
+header {
+    min-height: 70px;
+    background-color: var(--header-color);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
 
+    display: flex;
+    align-items: center;
+}
+
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.nav-menu {
+    display: none;
+}
+
+.logo h2 {
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: var(--secondary-color);
+}
+
+
+/* HAMBURGER STYLING */
+
+.hamburger-btn {
+    width: 44px;
+    height: 44px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+    background: none;
+    border: none;
+
+    cursor: pointer;
+}
+
+.hamburger-btn span {
+    width: 24px;
+    height: 2px;
+    background-color: var(--secondary-color);
+    border-radius: 2px;
+}
