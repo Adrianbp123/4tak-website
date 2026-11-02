@@ -25,7 +25,7 @@
 .intro-values {
     margin-top: 2rem;
     border-top: 1px solid rgba(6, 26, 48, 0.385);
-    padding-top: 1.5rem
+    padding-top: 1.5rem;
 }
 
 
@@ -40,7 +40,7 @@
 
 /* Alle intro-value som kommer etter en annen intro-value får skillelinje */
 .intro-value + .intro-value {
-    border-top: 1px solid rgba(6, 26, 48, 0.2);;
+    border-top: 1px solid rgba(6, 26, 48, 0.2);
 }
 
 .intro-value span {

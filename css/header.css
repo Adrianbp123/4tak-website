@@ -1,54 +1,89 @@
 header {
-    min-height: 70px;
-    background-color: var(--header-color);
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  min-height: 70px;
+  background-color: var(--header-color);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
 
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
+  padding-block: 16px;
 }
-
 
 header .container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-
-
 
 .nav-menu {
-    display: none;
+  display: none;
 }
 
-.logo h2 {
-    font-size: 1.4rem;
-    font-weight: 800;
-    color: var(--secondary-color);
+.logo img {
+  width: 110px;
 }
-
 
 /* HAMBURGER STYLING */
 
 .hamburger-btn {
-    width: 44px;
-    height: 44px;
+  width: 44px;
+  height: 44px;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
 
-    background: none;
-    border: none;
+  background: none;
+  border: none;
 
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .hamburger-btn span {
-    width: 24px;
-    height: 2px;
-    background-color: var(--secondary-color);
-    border-radius: 2px;
+  width: 24px;
+  height: 2px;
+  background-color: var(--secondary-color);
+  border-radius: 2px;
+}
+
+@media (min-width: 768px) {
+  .logo img {
+    width: 160px;
+  }
+}
+
+@media (min-width: 1024px) {
+
+    .hamburger-btn {
+        display: none;
+    }
+
+    .nav-menu {
+        display: block;
+    }
+
+    .nav-list {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .nav-link {
+        color: var(--secondary-color);
+        font-weight: 600;
+        transition: 0.2s ease;
+    }
+
+    .nav-link:hover {
+        color: var(--primary-color);
+    }
+
+    .nav-link:not(.nav-cta) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+    
 }
