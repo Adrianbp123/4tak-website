@@ -1,0 +1,91 @@
+
+.about-story {
+    padding-block: 4rem;
+    background-color: var(--bg-color);
+}
+
+.about-story .container {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.about-story-content {
+    flex: 1;
+}
+
+.about-story-content h1 {
+    color: var(--secondary-color);
+    line-height: 1.2;
+    margin-block: 1rem 2rem;
+}
+
+.about-story-text {
+    color: var(--muted-text);
+    line-height: 1.6;
+}
+
+.about-story-image {
+    flex: 1;
+    min-width: 0;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+}
+
+.about-story-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+@media (min-width: 768px) {
+    .about-story .container {
+        flex-direction: row;
+        align-items: center;
+        gap: 4rem;
+    }
+}
+
+
+/* SAMARBEID */
+
+.about-partnership {
+    background-color: var(--secondary-color);
+    color: white;
+    padding-block: 4rem;
+}
+
+.about-partnership .intro-label {
+    color: var(--primary-light);
+}
+
+.about-partnership-text {
+    color: #c5ccd3;
+    line-height: 1.6;
+    max-width: 650px;
+}
+
+/* VÅRT FOKUS */
+
+.about-quality {
+    background-color: var(--bg-color);
+    padding-block: 4rem;
+}
+
+.about-quality h2 {
+    color: var(--secondary-color);
+    line-height: 1.2;
+    margin-block: 1rem 1.5rem;
+}
+
+.about-quality-text {
+    color: var(--muted-text);
+    line-height: 1.6;
+    max-width: 650px;
+}
+
+.about-story-text + .about-story-text {
+    margin-top: 1rem;
+}
