@@ -1,0 +1,88 @@
+.service-details {
+    padding-block: 0rem 3rem;
+}
+
+.service-details-image {
+    margin-bottom: 3rem;
+    overflow: hidden;
+}
+
+.service-details-image img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
+.service-details-content {
+    max-width: 900px;
+
+    h2 {
+        margin-bottom: 1.5rem;
+    }
+
+    p {
+        margin-bottom: 1rem;
+    }
+}
+
+
+.service-contact {
+    background-color: var(--secondary-color);
+    color: #fff;
+    padding-block: 4rem;
+
+    h2 {
+        margin-bottom: 1rem;
+    }
+
+    p {
+        margin-bottom: 2rem;
+    }
+}
+
+.service-contact-btn {
+    display: inline-block;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 1.5rem;
+    background-color: var(--primary-color);
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    transition: background-color 0.2s ease;
+
+    span {
+        display: inline-block;
+        transition: transform 0.2s ease;
+    }
+}
+
+
+
+.service-contact-btn:hover {
+    background-color: var(--primary-hover);
+
+    span {
+        transform: translateX(4px);
+    }
+}
+
+
+@media (min-width: 768px) {
+    
+
+    .service-details-image img {
+        aspect-ratio: 16 / 7;
+    }
+
+    .service-contact-btn {
+        padding: 1.35rem 2.75rem;
+        font-size: 1.25rem;
+    
+    }
+
+}
+
+
