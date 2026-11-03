@@ -24,6 +24,11 @@
   font-weight: 800;
 }
 
+.hero-content p {
+    margin-top: 1rem;
+}
+
+
 .hero-btn {
   margin-top: 1.5rem;
 
