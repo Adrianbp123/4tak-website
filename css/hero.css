@@ -45,6 +45,12 @@
   transform: translateX(4px);
 }
 
+.hero-btns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
 /* HERO ANIMATION */
 
 @keyframes slide-in {

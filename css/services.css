@@ -124,8 +124,9 @@
 
 
 @media (min-width: 768px) {
-    .service-image {
-        aspect-ratio: 16 / 7;
+    .services-list {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 1.5rem;
     }
 }
 
