@@ -23,6 +23,18 @@
           <img src="./assets/images/4tak-logo.png" alt="4Tak AS" />
         </a>
 
+        <button
+          type="button"
+          class="hamburger-btn"
+          aria-label="Åpne meny"
+          aria-controls="main-navigation"
+          aria-expanded="false"
+        >
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+
         <nav class="nav-menu" id="main-navigation" aria-label="Hovedmeny">
           <ul class="nav-list">
             <li>
@@ -30,21 +42,14 @@
             </li>
             <li><a class="nav-link" href="/pages/about.html">Om oss</a></li>
             <li>
-              <a class="nav-link" href="/pages/contact.html" aria-current="page">Kontakt oss</a>
+              <a class="nav-link" href="/pages/contact.html">Kontakt oss</a>
             </li>
           </ul>
         </nav>
 
-        <button
-          class="hamburger-btn"
-          aria-label="Åpne meny"
-          aria-controls="main-navigation"
-          aria-expanded="false"
-        >
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
+        <div class="menu-overlay" aria-hidden="true">
+
+        
       </div>
     </header>
 
@@ -80,22 +85,30 @@
                 <div class="intro-values">
 
                 <div class="intro-value">
-                    <span>01</span>
+                    <img src="./assets/images/svg/award.svg" alt=""
+                    class="value-icon">
+                    <div class="value-content">
                     <h3>Kvalitet</h3>
                     <p>Bygget for å vare</p>
+                    </div>
                 </div>
 
                  <div class="intro-value">
-                    <span>02</span>
+                    <img src="./assets/images/svg/hard-hat.svg" alt=""
+                    class="value-icon">
+                    <div class="value-content">
                     <h3>Fagkunnskap</h3>
                     <p>Godt håndverk i hvert ledd</p>
+                    </div>
                 </div>
 
                  <div class="intro-value">
-                    <span>03</span>
+                    <img src="./assets/images/svg/handshake.svg" alt=""
+                    class="value-icon">
+                    <div class="value-content">
                     <h3>Pålitelighet</h3>
                     <p>Vi holder det vi lover</p>
-                </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -113,7 +126,7 @@
                     <article class="service-card">
                         <a class="service-card-link" href="./pages/services/taktekking.html">
                         <div class="service-image">
-                            <img src="assets/images/taktekking-placeholder.jpeg" alt="Taktekking">
+                            <img src="assets/images/tjeneste-bilder/4tak-tjeneste-1.png" alt="Taktekking">
                         </div>
 
                         <div class="service-content">
@@ -131,14 +144,13 @@
                     <article class="service-card">
                         <a class="service-card-link" href="./pages/services/grytetekking.html">
                         <div class="service-image">
-                            <img src="assets/images/service-og-vedlikehold-placeholder.jpeg" alt="Service og vedlikehold">
+                            <img src="assets/images/" alt="Service og vedlikehold">
                         </div>
 
                         <div class="service-content">
                             <span class="service-number">02</span>
                             <h3>Grytetekking</h3>
-                            <p>Slitesterke og vanntette løsninger med varm asfalt
-                            for langvarig beskyttelse av taket.</p>
+                            <p>Slitesterke og vanntette løsninger med varm asfalt for langvarig beskyttelse</p>
                             <span class="service-btn">
                                 Les mer <span>&gt;</span>
                             </span>
@@ -150,7 +162,7 @@
                     <article class="service-card">
                         <a class="service-card-link" href="./pages/services/takforvaltning.html">
                         <div class="service-image">
-                            <img src="assets/images/rehabilitering-placeholder.jpeg" alt="Rehabilitering">
+                            <img src="assets/images/tjeneste-bilder/4tak-tjeneste-3.png" alt="Rehabilitering">
                         </div>
 
                         <div class="service-content">
@@ -237,7 +249,7 @@
             Ta kontakt med oss for å diskutere ditt prosjekt.
         </p>
 
-        <a href="./pages/contact.html" class="service-contact-btn">
+        <a href="./pages/contact.html" class="btn service-contact-btn">
             Kontakt oss
             <span aria-hidden="true">&gt;</span>
         </a>
@@ -245,7 +257,7 @@
 </section>
 
     </main>
-
+</div>
 
     <footer class="footer">
       <div class="container">
@@ -296,5 +308,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/burger.js" defer></script>
   </body>
 </html>

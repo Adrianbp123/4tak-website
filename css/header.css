@@ -1,4 +1,7 @@
 header {
+  position: relative;
+  z-index: 100;
+
   min-height: 70px;
   background-color: var(--header-color);
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
@@ -15,7 +18,55 @@ header .container {
 }
 
 .nav-menu {
-  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 200;
+
+  width: min(320px, 85vw);
+  height: 100dvh;
+
+  background-color: var(--header-color);
+  box-shadow: 10px 0 30px rgba(0, 0, 0, 0.15);
+
+  transform: translateX(100%);
+  visibility: hidden;
+
+  transition:
+    transform 0.3s ease,
+    visibility 0.3s;
+
+  overflow-y: auto;
+}
+
+.nav-menu.is-open {
+  visibility: visible;
+  transform: translateX(0);
+}
+
+.nav-menu.is-open {
+  visibility: visible;
+  transform: translateX(0);
+}
+
+.menu-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 150;
+
+  background-color: rgba(0, 0, 0, 0.5);
+
+  opacity: 0;
+  visibility: hidden;
+
+  transition:
+    opacity 0.3s ease,
+    visibility 0.3s;
+}
+
+.menu-overlay.is-open {
+  opacity: 1;
+  visibility: visible;
 }
 
 .logo img {
@@ -47,43 +98,68 @@ header .container {
   border-radius: 2px;
 }
 
-@media (min-width: 768px) {
-  .logo img {
-    width: 160px;
-  }
-}
 
-@media (min-width: 1024px) {
-
-    .hamburger-btn {
-        display: none;
-    }
-
-    .nav-menu {
-        display: block;
-    }
 
     .nav-list {
         display: flex;
-        align-items: center;
-        gap: 2rem;
+        flex-direction: column;
+        gap: 0rem;
+      padding: 1rem 1.5rem;
+
     }
 
     .nav-link {
-        color: var(--secondary-color);
-        font-weight: 600;
-        transition: 0.2s ease;
+      display: block;
+      padding: 1rem 0;
+      color: var(--secondary-color);
+      font-weight: 600;
+      transition: color 0.2s ease;
+      
     }
 
     .nav-link:hover {
         color: var(--primary-color);
     }
 
-    .nav-link:not(.nav-cta) {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        position: relative;
-    }
-    
+   
+
+
+@media (min-width: 1024px) {
+  .hamburger-btn {
+    display: none;
+  }
+
+  .nav-menu,
+  .nav-menu.is-open {
+    display: block;
+    position: static;
+    width: auto;
+    height: auto;
+    transform: none;
+    visibility: visible;
+    box-shadow: none;
+    overflow: visible;
+  }
+
+  .nav-list {
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    padding: 0;
+  }
+
+  .nav-link {
+    padding: 0;
+  }
+
+  .nav-link:not(.nav-cta) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+
+  .menu-overlay {
+    display: none;
+  }
 }

@@ -1,6 +1,4 @@
-.contact {
-    padding-block: 1rem 0rem;
-}
+
 
 .contact-layout {
     gap: 2rem;
@@ -128,10 +126,6 @@
         height: auto;
         max-width: 500px;
     }
-
-    .contact {
-    padding-block: 0rem 2rem;
-}
 
   
 }
