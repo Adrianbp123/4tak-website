@@ -110,16 +110,19 @@ header .container {
 
     .nav-link {
       display: block;
-      padding: 1rem 0;
+      padding: 2rem 0;
       color: var(--secondary-color);
       font-weight: 600;
       transition: color 0.2s ease;
-      
+      border-bottom: 1px solid var(--primary-color)
     }
 
     .nav-link:hover {
         color: var(--primary-color);
     }
+
+
+    
 
    
 
@@ -150,6 +153,7 @@ header .container {
 
   .nav-link {
     padding: 0;
+    border-bottom: 0;
   }
 
   .nav-link:not(.nav-cta) {

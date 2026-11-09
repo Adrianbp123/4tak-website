@@ -195,6 +195,10 @@
     margin-bottom: 1rem;
 }
 
+.page-intro h2 {
+    margin-bottom: 1rem;
+}
+
 .page-intro-text {
     color: var(--muted-text);
     max-width: 650px;
