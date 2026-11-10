@@ -42,31 +42,19 @@
 }
 
 .service-contact-btn {
-    display: inline-block;
-    align-items: center;
-    gap: 0.75rem;
-    padding: 1rem 1.5rem;
     background-color: var(--primary-color);
-    color: #fff;
-    text-decoration: none;
-    font-weight: 600;
-    border-radius: 0.5rem;
-    transition: background-color 0.2s ease;
-
-    span {
-        display: inline-block;
-        transition: transform 0.2s ease;
-    }
+    color: white;
+    border: 1px solid var(--primary-color);
+    padding: 1rem 2rem;
 }
-
-
 
 .service-contact-btn:hover {
     background-color: var(--primary-hover);
+    border-color: var(--primary-hover);
+}
 
-    span {
-        transform: translateX(4px);
-    }
+.service-contact-btn span {
+    font-size: var(--h3);
 }
 
 
