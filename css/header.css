@@ -24,7 +24,7 @@ header .container {
   z-index: 200;
 
   width: min(320px, 85vw);
-  height: 100dvh;
+  height: 100svh;
 
   background-color: var(--header-color);
   box-shadow: 10px 0 30px rgba(0, 0, 0, 0.15);
@@ -36,7 +36,8 @@ header .container {
     transform 0.3s ease,
     visibility 0.3s;
 
-  overflow-y: auto;
+  overflow-y: hidden;
+  overscroll-behavior: none;
 }
 
 .nav-menu.is-open {
@@ -47,6 +48,11 @@ header .container {
 .nav-menu.is-open {
   visibility: visible;
   transform: translateX(0);
+}
+
+body.menu-open {
+  overflow: hidden;
+  overscroll-behavior: none;
 }
 
 .menu-overlay {
@@ -119,6 +125,43 @@ header .container {
 
     .nav-link:hover {
         color: var(--primary-color);
+    }
+
+    .menu-mascot {
+      position: absolute;
+      right: -15px;
+      bottom: 0;
+
+      width: 300px;
+      height: auto;
+
+      pointer-events: none;
+      opacity: 0;
+      transform: translateX(100%);
+
+      
+    }
+
+    .nav-menu.is-open .menu-mascot {
+      animation: mascot-enter 0.7s ease-out 0.15s forwards;
+    }
+
+    @keyframes mascot-enter {
+
+      0% { 
+        transform: translateX(100%);
+      opacity: 0; 
+    }
+      70% { transform: translateX(-10px);
+        opacity: 1;
+      
+      }
+
+      100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
     }
 
 

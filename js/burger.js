@@ -17,6 +17,9 @@ if (hamburgerBtn && navMenu) {
 
     navMenu.classList.toggle("is-open", isOpen);
     menuOverlay.classList.toggle("is-open", isOpen);
+
+    // Hindrer scrolling bak menyen når den er åpen
+  document.body.classList.toggle("menu-open", isOpen);
   }
 
   // Åpner og lukker menyen ved klikk
