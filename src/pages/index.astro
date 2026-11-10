@@ -1,0 +1,212 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Forside">
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1>Landsdekkende takentreprenør</h1>
+          <p>Solide takløsninger bygget for å vare</p>
+          <div class="hero-btns">
+            <a class="btn hero-btn" href="#tjenester"
+              >Se våre tjenester <span>&gt;</span></a
+            >
+            <a class="btn hero-btn" href="/contact"
+              >Kontakt oss <span>&gt;</span></a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="intro">
+      <div class="container">
+        <div class="intro-content">
+          <p class="intro-label">Om 4Tak</p>
+          <h2>Et godt tak handler om mer enn å holde regnet ute.</h2>
+          <p class="intro-text">
+            Vi leverer solide takløsninger med fokus på kvalitet, godt håndverk
+            og løsninger som varer.
+          </p>
+        </div>
+
+        <div class="intro-values">
+          <div class="intro-value">
+            <img
+              src="./assets/images/svg/award.svg"
+              alt=""
+              class="value-icon"
+            />
+            <div class="value-content">
+              <h3>Kvalitet</h3>
+              <p>Bygget for å vare</p>
+            </div>
+          </div>
+
+          <div class="intro-value">
+            <img
+              src="./assets/images/svg/hard-hat.svg"
+              alt=""
+              class="value-icon"
+            />
+            <div class="value-content">
+              <h3>Fagkunnskap</h3>
+              <p>Godt håndverk i hvert ledd</p>
+            </div>
+          </div>
+
+          <div class="intro-value">
+            <img
+              src="./assets/images/svg/handshake.svg"
+              alt=""
+              class="value-icon"
+            />
+            <div class="value-content">
+              <h3>Pålitelighet</h3>
+              <p>Vi holder det vi lover</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="tjenester">
+      <div class="container">
+        <div class="services-header">
+          <p class="services-label">Våre tjenester</p>
+          <h2>Takarbeid som dekker hele behovet ditt.</h2>
+        </div>
+
+        <div class="services-list">
+          <article class="service-card">
+            <a class="service-card-link" href="/services/taktekking">
+              <div class="service-image">
+                <img
+                  src="/assets/images/services/4tak-tjeneste-1.png"
+                  alt="Taktekking"
+                />
+              </div>
+
+              <div class="service-content">
+                <span class="service-number">01</span>
+                <h3>Taktekking og isolering</h3>
+                <p>Solide løsninger tilpasset bygget og behovene dine.</p>
+                <span class="service-btn"
+                  >Les mer
+                  <span>&gt;</span>
+                </span>
+              </div>
+            </a>
+          </article>
+
+          <article class="service-card">
+            <a class="service-card-link" href="/services/grytetekking">
+              <div class="service-image">
+                <img
+                  src="assets/images/services/4tak-tjeneste-2.png"
+                  alt="Service og vedlikehold"
+                />
+              </div>
+
+              <div class="service-content">
+                <span class="service-number">02</span>
+                <h3>Grytetekking</h3>
+                <p>
+                  Slitesterke og vanntette løsninger med varm asfalt for
+                  langvarig beskyttelse
+                </p>
+                <span class="service-btn">
+                  Les mer <span>&gt;</span>
+                </span>
+              </div>
+            </a>
+          </article>
+
+          <article class="service-card">
+            <a class="service-card-link" href="/services/takforvaltning">
+              <div class="service-image">
+                <img
+                  src="assets/images/services//4tak-tjeneste-3.png"
+                  alt="Rehabilitering"
+                />
+              </div>
+
+              <div class="service-content">
+                <span class="service-number">03</span>
+                <h3>Takforvaltning</h3>
+                <p>
+                  Vi gir eldre tak nytt liv og sørger for en løsning som varer.
+                </p>
+                <span class="service-btn">
+                  Les mer <span>&gt;</span>
+                </span>
+              </div>
+            </a>
+          </article>
+        </div>
+
+        <a class="btn more-services" href="/services">
+          Se alle våre tjenester <span>&gt;</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="partners">
+      <div class="container">
+        <div class="partners-header">
+          <p class="partners-label">Leverandører</p>
+          <h2>Våre Leverandører</h2>
+          <p>
+            Vi samarbeider med etablerte leverandører for å sikre solide
+            løsninger og materialer av høy kvalitet.
+          </p>
+        </div>
+
+        <div class="partners-list">
+          <div class="partner">
+            <img src="assets/images/partners/vidar-hansen-logo.png" alt="" />
+          </div>
+
+          <div class="partner">
+            <img src="assets/images/partners/protan-logo.png" alt="" />
+          </div>
+
+          <div class="partner">
+            <img src="assets/images/partners/rockwool-logo.png" alt="" />
+          </div>
+
+          <div class="partner">
+            <img src="assets/images/partners/takleverandoren-logo.png" alt="" />
+          </div>
+
+          <div class="partner">
+            <img src="assets/images/partners/kingspan-logo.webp" alt="" />
+          </div>
+
+          <div class="partner">
+            <img src="assets/images/partners/sundolitt-logo.webp" alt="" />
+          </div>
+
+          <div class="partner">
+            <img src="assets/images/partners/SFS-logo.webp" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="service-contact">
+      <div class="container">
+        <h2>Trenger du hjelp med taket?</h2>
+
+        <p>Ta kontakt med oss for å diskutere ditt prosjekt.</p>
+
+        <a href="/contact" class="btn service-contact-btn">
+          Kontakt oss
+          <span aria-hidden="true">&gt;</span>
+        </a>
+      </div>
+    </section>
+  </main>
+</BaseLayout>

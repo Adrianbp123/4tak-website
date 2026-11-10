@@ -1,0 +1,40 @@
+.service-contact {
+    background-color: var(--secondary-color);
+    color: #fff;
+    padding-block: 4rem;
+}
+
+.service-contact h2 {
+    margin-bottom: 1rem;
+}
+
+.service-contact p {
+    margin-bottom: 2rem;
+}
+
+.service-contact-btn {
+    background-color: var(--primary-color);
+    color: white;
+    border: 1px solid var(--primary-color);
+    padding: 1rem 2rem;
+}
+
+.service-contact-btn:hover {
+    background-color: var(--primary-hover);
+    border-color: var(--primary-hover);
+}
+
+.service-contact-btn span {
+    font-size: var(--h3);
+}
+
+
+@media (min-width: 768px) {
+
+    .service-contact-btn {
+        padding: 1.35rem 2.75rem;
+        font-size: 1.25rem;
+    
+    }
+
+}

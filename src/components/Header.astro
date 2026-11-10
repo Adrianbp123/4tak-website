@@ -1,0 +1,78 @@
+---
+const pathname = Astro.url.pathname;
+---
+
+<header>
+  <div class="container">
+    <a href="/" class="logo" aria-label="4Tak AS - Forside">
+      <img src="/assets/images/branding/4tak-logo.png" alt="4Tak AS" />
+    </a>
+
+    <button
+      type="button"
+      class="hamburger-btn"
+      aria-label="Åpne meny"
+      aria-controls="main-navigation"
+      aria-expanded="false"
+    >
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+    </button>
+
+    <nav class="nav-menu" id="main-navigation" aria-label="Hovedmeny">
+      <ul class="nav-list">
+        <li>
+          <a
+            class="nav-link"
+            href="/services"
+            aria-current={pathname.startsWith("/services") ? "page" : undefined}
+          >
+            Tjenester
+          </a>
+        </li>
+
+        <li>
+          <a
+            class="nav-link"
+            href="/about"
+            aria-current={pathname === "/about" ? "page" : undefined}
+          >
+            Om oss
+          </a>
+        </li>
+
+        <li>
+          <a
+            class="nav-link"
+            href="/contact"
+            aria-current={pathname === "/contact" ? "page" : undefined}
+          >
+            Kontakt oss
+          </a>
+        </li>
+      </ul>
+
+      <div class="menu-contact">
+        <p class="menu-contact-label">Har du spørsmål?</p>
+
+        <a class="menu-phone" href="tel:+4792858610">
+          <img src="/assets/images/icons/4tak-ikoner/phone.png" alt="" />
+
+          <div class="menu-phone-info">
+            <span class="menu-phone-title">Ring Oss</span>
+            <span>92 85 86 10</span>
+          </div>
+        </a>
+      </div>
+
+      <img
+        class="menu-mascot"
+        src="/assets/images/branding/4tak-mascot.png"
+        alt=""
+      />
+    </nav>
+  </div>
+
+  <div class="menu-overlay" aria-hidden="true"></div>
+</header>

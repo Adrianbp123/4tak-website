@@ -1,0 +1,36 @@
+.service-details {
+    padding-block: 0rem 3rem;
+}
+
+.service-details-image {
+    margin-bottom: 3rem;
+    overflow: hidden;
+}
+
+.service-details-image img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
+.service-details-content {
+    max-width: 900px;
+}
+
+.service-details-content h2 {
+  margin-bottom: 1.5rem;
+}
+
+.service-details-content p {
+    margin-bottom: 1rem;
+}
+
+
+@media (min-width: 768px) {
+    
+.service-details-image img {
+        aspect-ratio: 16 / 7;
+    }
+
+}
