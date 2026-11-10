@@ -1,0 +1,25 @@
+{
+  "name": "4tak-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+  "dev": "astro dev",
+  "build": "astro build",
+  "preview": "astro preview"
+},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Adrianbp123/4tak-website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Adrianbp123/4tak-website/issues"
+  },
+  "homepage": "https://github.com/Adrianbp123/4tak-website#readme",
+  "dependencies": {
+    "astro": "^7.3.8"
+  }
+}
