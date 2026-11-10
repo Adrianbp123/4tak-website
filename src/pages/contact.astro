@@ -1,0 +1,85 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout
+  title="Kontakt oss | 4Tak AS"
+  description="Kontakt 4Tak AS for spørsmål om taktekking, takarbeid eller befaring. Vi hjelper deg gjerne med ditt prosjekt."
+>
+  <main>
+    <section class="page-intro">
+      <div class="container">
+        <nav class="intro-label" aria-label="Brødsmulesti">
+          <a href="/">4Tak</a>
+          <span aria-hidden="true"> / </span>
+          <span aria-current="page">Kontakt oss</span>
+        </nav>
+        <h1>Ta kontakt med oss.</h1>
+        <p class="page-intro-text">
+          Har du spørsmål eller behov for takarbeid? Vi hjelper deg gjerne med å
+          finne en løsning. Ta gjerne kontakt for en hyggelig prat eller en
+          befaring!
+        </p>
+      </div>
+    </section>
+
+    <section class="contact">
+      <div class="container">
+        <div class="contact-layout">
+          <div class="contact-list">
+            <div class="contact-item">
+              <a class="contact-link" href="tel:+4792858610">
+                <img src="/assets/images/icons/4tak-ikoner/phone.png" alt="" />
+                <div class="contact-info">
+                  <h2>Telefon</h2>
+                  <span>92 85 86 10</span>
+                </div>
+              </a>
+            </div>
+
+            <div class="contact-item">
+              <a class="contact-link" href="mailto:post@4tak.no">
+                <img src="/assets/images/icons/4tak-ikoner/mail.png" alt="" />
+                <div class="contact-info">
+                  <h2>E-post</h2>
+                  <span>post@4tak.no</span>
+                </div>
+              </a>
+            </div>
+
+            <div class="contact-item">
+              <a
+                class="contact-link"
+                href="https://www.google.com/maps/search/?api=1&query=Lundteigveien%2010%2C%203175%20Ramnes"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="/assets/images/icons/4tak-ikoner/map-pin.png"
+                  alt=""
+                />
+                <div class="contact-info">
+                  <h2>Adresse</h2>
+                  <span>Lundteigveien 10, 3175 Ramnes</span>
+                </div>
+              </a>
+            </div>
+
+            <div class="contact-team">
+              <p>Ønsker du å kontakte en bestemt medarbeider?</p>
+
+              <a href="/about#team">
+                Se våre medarbeidere
+                <span aria-hidden="true">&gt;</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-image">
+            <img src="/assets/images/branding/contact-avatar.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</BaseLayout>

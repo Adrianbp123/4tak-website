@@ -1,0 +1,22 @@
+/* GLOBAL STYLING */
+@import "./global.css";
+
+/* FELLES KOMPONENTER */
+@import "./header.css";
+@import "./footer.css";
+
+/* FORSIDE */
+@import "./hero.css";
+@import "./intro.css";
+@import "./partners.css";
+
+/* TJENESTER */
+@import "./services.css";
+@import "./service-details.css";
+
+/* UNDERSIDER */
+@import "./about.css";
+@import "./contact.css";
+
+/* FELLES KONTAKTSEKSJON */
+@import "./service-contact.css";
