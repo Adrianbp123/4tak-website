@@ -129,3 +129,40 @@
 
   
 }
+
+
+.contact-team {
+    margin-top: 2rem;
+}
+
+.contact-team p {
+    color: var(--muted-text);
+    margin-bottom: 0.5rem;
+}
+
+.contact-team a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--primary-color);
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.25s ease;
+}
+
+.contact-team a span {
+    transition: transform 0.2s ease;
+}
+
+.contact-team a:hover span {
+    transform: translateX(4px);
+}
+
+.contact-team a:hover {
+    color: var(--primary-hover);
+}
+
+.contact-team a:focus-visible {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 4px;
+}
