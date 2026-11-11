@@ -1,0 +1,26 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout
+  title="404 – Siden finnes ikke"
+  description="Siden du leter etter finnes ikke."
+>
+  <main class="error-page">
+    <div class="container">
+      <div class="error-content">
+        <span class="error-code" aria-hidden="true">404</span>
+
+        <h1>Siden finnes ikke</h1>
+
+        <p>
+          Beklager, vi finner ikke siden du leter etter.
+        </p>
+
+        <a href="/" class="error-btn">
+          Tilbake til forsiden
+        </a>
+      </div>
+    </div>
+  </main>
+</BaseLayout>

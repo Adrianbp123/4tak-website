@@ -80,7 +80,7 @@
 
 .about-partnership {
     background-color: var(--secondary-color);
-    color: white;
+    color: var(--text-light);
     padding-block: 4rem;
 }
 
@@ -89,7 +89,7 @@
 }
 
 .about-partnership-text {
-    color: #c5ccd3;
+    color: var(--text-light-muted);
     line-height: 1.6;
     max-width: 650px;
 }
@@ -121,7 +121,7 @@
 /* ANSATTE */
 .about-team {
     background-color: var(--secondary-color);
-    color: #c5ccd3;
+    color: var(--text-light-muted);
     padding-block: 4rem;
 }
 
@@ -130,12 +130,12 @@
 }
 
 .about-team h2 {
-    color: white;
+    color: var(--text-light);
     margin-block: 1rem;
 }
 
 .about-team-intro {
-    color: #c5ccd3;
+    color: var(--text-light-muted);
     line-height: 1.6;
 }
 
@@ -165,7 +165,7 @@
     gap: 0.5rem;
     margin-top: 0.75rem;
 
-    color: #c5ccd3;
+    color: var(--text-light-muted);
     font-size: 0.875rem;
     text-decoration: none;
     transition: color 0.2s ease;
@@ -183,7 +183,7 @@
 }
 
 .team-phone:hover {
-    color: white;
+    color: var(--text-light);
     text-decoration: underline;
     text-underline-offset: 3px;
 }

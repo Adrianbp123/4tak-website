@@ -1,0 +1,46 @@
+
+.error-page {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-block: 5rem;
+}
+
+.error-content {
+  max-width: 550px;
+  margin-inline: auto;
+}
+
+.error-code {
+  font-size: clamp(5rem, 15vw, 9rem);
+  font-weight: 800;
+  line-height: 1;
+  color: var(--primary-color);
+}
+
+.error-content h1 {
+  margin-top: 1rem;
+}
+
+.error-content p {
+  margin-top: 1rem;
+  color: var(--muted-text);
+}
+
+.error-btn {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.875rem 1.5rem;
+  background-color: var(--primary-color);
+  color: var(--text-light);
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+}
+
+.error-btn:hover {
+  background-color: var(--primary-hover);
+}

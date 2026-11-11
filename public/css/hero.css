@@ -4,7 +4,7 @@
   padding-top: 5rem;
 
   background-image:
-    linear-gradient(rgba(6, 26, 48, 0.856), rgba(6, 26, 48, 0.342)),
+    linear-gradient(rgba(6, 26, 48, 0.70), rgba(6, 26, 48, 0.30)),
     url("/assets/images/hero/mobile-hero.jpeg");
 
   background-size: cover;
@@ -14,7 +14,7 @@
 }
 
 .hero-content {
-  color: white;
+  color: var(--text-light);
 
   animation: slide-in 0.8s ease-out;
 }
@@ -34,7 +34,7 @@
   margin-top: 2rem;
 
   background-color: rgba(6, 26, 48, 0.618);
-  color: white;
+  color: var(--text-light);
   border: 1px solid rgba(255, 255, 255, 0.8);
 }
 

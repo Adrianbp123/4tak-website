@@ -10,7 +10,7 @@
 }
 
 .services-label {
-    color: #aeb8c4;
+    color: var(--text-light-subtle);
     text-transform: uppercase;
     margin-bottom: 1rem;
 }
@@ -53,17 +53,17 @@
 
 .service-number {
     display: block;
-    color: #8fa4b8;
+    color: var(--text-light-number);
     margin-bottom: 0.5rem;
 }
 
 .service-content h3 {
-    color: #f3f3f3;
+    color: var(--text-light-heading);
     margin-bottom: 0.5rem;
 }
 
 .service-content p {
-    color: #c5ccd3;
+    color: var(--text-light-muted);
     margin-bottom: 0.5rem;
 }
 
@@ -122,7 +122,7 @@
 
 .more-services:hover {
     background-color: var(--primary-color);
-    color: white;
+    color: var(--text-light);
     transform: translateY(-2px);
 }
 

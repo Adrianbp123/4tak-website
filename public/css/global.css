@@ -1,6 +1,6 @@
 :root {
   /* FARGER */
-  --bg-color: #e4e4e48b;
+  --bg-color: #f0f0f0;
 
   --primary-color: #0050a9;
   --primary-hover: #003f85;
@@ -16,9 +16,11 @@
   --header-color: #ffffff;
 
   /* Tekst på mørke bakgrunner */
-  --text-light: #ffffff;
-  --text-light-muted: #c5ccd3;
-  --text-light-subtle: #aeb8c4;
+--text-light: #ffffff;
+--text-light-muted: #c5ccd3;
+--text-light-subtle: #aeb8c4;
+--text-light-heading: #f3f3f3;
+--text-light-number: #8fa4b8;
 
   /* FONT */
   --text-font: "Manrope", sans-serif;

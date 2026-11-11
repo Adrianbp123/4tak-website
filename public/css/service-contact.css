@@ -14,7 +14,7 @@
 
 .service-contact-btn {
     background-color: var(--primary-color);
-    color: white;
+    color: var(--text-light);
     border: 1px solid var(--primary-color);
     padding: 1rem 2rem;
 }

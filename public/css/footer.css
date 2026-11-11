@@ -1,6 +1,6 @@
 .footer {
     background-color: var(--dark-color);
-    color: white;
+    color: var(--text-light);
     padding-top: 4rem;
 }
 
@@ -19,7 +19,7 @@
 
 .footer-logo p {
     margin-top: 1rem;
-    color: #c5ccd3;
+    color: var(--text-light-muted);
 }
 
 .footer h3 {
@@ -32,7 +32,7 @@
 }
 
 .footer-nav a {
-    color: #c5ccd3;
+    color: var(--text-light-muted);
     transition: color 0.2s ease;
 }
 
@@ -52,7 +52,7 @@
 }
 
 .footer-contact p {
-    color: #c5ccd3;
+    color: var(--text-light-muted);
 
     display: flex;
     flex-wrap: wrap;
@@ -74,7 +74,7 @@
 }
 
 .footer-bottom p {
-    color: #aeb8c4;
+    color: var(--text-light-subtle);
     font-size: 0.875rem;
 }
 

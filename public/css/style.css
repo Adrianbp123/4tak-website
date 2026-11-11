@@ -17,6 +17,7 @@
 /* UNDERSIDER */
 @import "./about.css";
 @import "./contact.css";
+@import "./404.css";
 
 /* FELLES KONTAKTSEKSJON */
 @import "./service-contact.css";

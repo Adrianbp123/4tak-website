@@ -23,6 +23,10 @@ header .container {
 
 
 .nav-menu {
+  display: flex;
+  flex-direction: column;
+
+
   position: fixed;
   top: 0;
   right: 0;
@@ -42,10 +46,10 @@ header .container {
     transform 0.3s ease,
     visibility 0.3s;
 
-  overflow-x: hidden;
-  overflow-y: auto;
-  overscroll-behavior: contain;
+  overflow: hidden;
 }
+
+
 
 .nav-menu.is-open {
   visibility: visible;
@@ -54,7 +58,6 @@ header .container {
 
 body.menu-open {
   overflow: hidden;
-  overscroll-behavior: none;
 }
 
 .menu-overlay {
@@ -134,7 +137,7 @@ body.menu-open {
 
 /* Kontaktinformasjon i mobilmenyen */
 .menu-contact {
-  margin: 2rem 1.5rem 0;
+  margin: 2rem 1.5rem;
   
 }
 
@@ -186,7 +189,6 @@ body.menu-open {
     .nav-list {
         display: flex;
         flex-direction: column;
-        gap: 0rem;
       padding: 4rem 1.5rem 0;
 
     }
@@ -205,11 +207,11 @@ body.menu-open {
     }
 
     .menu-mascot {
-      position: absolute;
-      right: -15px;
-      top: 500px;
+      margin-top: auto;
+      margin-left: auto;
+      margin-right: -15px;
 
-      width: 300px;
+      width: min(300px, 80%);
       height: auto;
 
       pointer-events: none;
@@ -252,13 +254,15 @@ body.menu-open {
     display: none;
   }
 
-  .menu-contact {
+  .menu-contact, .menu-mascot {
     display: none;
   }
 
+
+
   .nav-menu,
   .nav-menu.is-open {
-    display: block;
+    display: flex;
     position: static;
     width: auto;
     height: auto;
