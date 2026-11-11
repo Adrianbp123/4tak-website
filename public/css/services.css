@@ -1,138 +1,131 @@
-
 .services {
-    background-color: var(--secondary-color);
-    color: #f6f6f6;
-    padding-block: 4rem;
+  background-color: var(--secondary-color);
+  color: #f6f6f6;
+  padding-block: 4rem;
 }
 
 .services-header {
-    margin-bottom: 2.5rem;
+  margin-bottom: 2.5rem;
 }
 
 .services-label {
-    color: #aeb8c4;
-    text-transform: uppercase;
-    margin-bottom: 1rem;
+  color: var(--text-light-subtle);
+  text-transform: uppercase;
+  margin-bottom: 1rem;
 }
 
 /* SERVICES GRID */
 
 .services-list {
-    display: grid;
-    gap: 3rem;
+  display: grid;
+  gap: 3rem;
 }
 
 /* SERVICES BILDER */
 
 .service-image {
-    width: 100%;
-    aspect-ratio: 16 / 9;
-    background-color: var(--dark-color);
-    overflow: hidden;
-    margin-bottom: 1.5rem;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background-color: var(--dark-color);
+  overflow: hidden;
+  margin-bottom: 1.5rem;
 
-    box-shadow:
-        0 12px 30px rgba(0, 0, 0, 0.25),
-        0 0 20px rgba(18, 93, 168, 0.284);
+  box-shadow:
+    0 12px 30px rgba(0, 0, 0, 0.25),
+    0 0 20px rgba(18, 93, 168, 0.284);
 }
 
 .service-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 
-    transition: transform 0.4s ease;
+  transition: transform 0.4s ease;
 }
 
 /* SERVICES INNHOLD */
 
 .service-card-link {
-    display: block;
-    color: inherit;
+  display: block;
+  color: inherit;
 }
 
 .service-number {
-    display: block;
-    color: #8fa4b8;
-    margin-bottom: 0.5rem;
+  display: block;
+  color: var(--text-light-number);
+  margin-bottom: 0.5rem;
 }
 
 .service-content h3 {
-    color: #f3f3f3;
-    margin-bottom: 0.5rem;
+  color: var(--text-light-heading);
+  margin-bottom: 0.5rem;
 }
 
 .service-content p {
-    color: #c5ccd3;
-    margin-bottom: 0.5rem;
+  color: var(--text-light-muted);
+  margin-bottom: 0.5rem;
 }
 
 .service-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.4rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
 
-    color: var(--primary-light);
-    font-weight: 600;
+  color: var(--primary-light);
+  font-weight: 600;
 }
 
 .service-btn span {
-    display: inline-block;
-    font-size: 1.1rem;
-    font-weight: 600;
-    line-height: 1;
+  display: inline-block;
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1;
 
-    transition: transform 0.2s ease;
+  transition: transform 0.2s ease;
 }
 
 /* HOVER */
 
 .service-card:hover .service-image img {
-    transform: scale(1.03);
+  transform: scale(1.03);
 }
 
 .service-card:hover .service-btn > span {
-    transform: translateX(4px);
+  transform: translateX(4px);
 }
 
 .service-card:hover .service-btn {
-    color: var(--primary-light-hover);
+  color: var(--primary-light-hover);
 }
 
-
 .more-services {
-    display: flex;
-    width: fit-content;
-    margin: 4rem auto 0;
-    padding: 1.3rem 2rem;
+  display: flex;
+  width: fit-content;
+  margin: 4rem auto 0;
+  padding: 1.3rem 2rem;
 
-    color: var(--primary-light);
-    border: 1px solid var(--primary-light);
-    transition: 
+  color: var(--primary-light);
+  border: 1px solid var(--primary-light);
+  transition:
     background-color 0.2s ease,
     color 0.2s ease,
     transform 0.2s ease;
 
-    font-size: var(--h3);
+  font-size: var(--h3);
 }
 
 .more-services span {
-    font-size: var(--h3);
+  font-size: var(--h3);
 }
 
 .more-services:hover {
-    background-color: var(--primary-color);
-    color: white;
-    transform: translateY(-2px);
+  background-color: var(--primary-color);
+  color: var(--text-light);
+  transform: translateY(-2px);
 }
-
 
 @media (min-width: 768px) {
-    
 }
-
-
-
 
 /* SERVICES PAGE */
 
@@ -140,12 +133,10 @@
   padding-bottom: 6rem;
 }
 
-
 .services-page .services-list {
   grid-template-columns: 1fr;
   gap: 3rem;
 }
-
 
 @media (min-width: 768px) {
   /* Layout services-page */
@@ -156,11 +147,10 @@
 
   /* Layout forside*/
   .services-list {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-        gap: 1.5rem;
-    }
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.5rem;
+  }
 }
-
 
 @media (min-width: 1024px) {
   .services-page .services-list {
@@ -181,8 +171,3 @@
     transform: translateX(-20px);
   }
 }
-
-
-
-
-

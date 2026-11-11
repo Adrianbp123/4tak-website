@@ -10,12 +10,12 @@ import BaseLayout from "../layouts/BaseLayout.astro";
           <h1>Landsdekkende takentreprenør</h1>
           <p>Solide takløsninger bygget for å vare</p>
           <div class="hero-btns">
-            <a class="btn hero-btn" href="#tjenester"
-              >Se våre tjenester <span>&gt;</span></a
-            >
-            <a class="btn hero-btn" href="/contact"
-              >Kontakt oss <span>&gt;</span></a
-            >
+            <a class="btn hero-btn" href="#tjenester">
+              Se våre tjenester <span aria-hidden="true">&gt;</span>
+            </a>
+            <a class="btn hero-btn" href="/contact">
+              Kontakt oss <span aria-hidden="true">&gt;</span>
+            </a>
           </div>
         </div>
       </div>
@@ -34,11 +34,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
         <div class="intro-values">
           <div class="intro-value">
-            <img
-              src="./assets/images/svg/award.svg"
-              alt=""
-              class="value-icon"
-            />
+            <img src="/assets/images/svg/award.svg" alt="" class="value-icon" />
             <div class="value-content">
               <h3>Kvalitet</h3>
               <p>Bygget for å vare</p>
@@ -47,7 +43,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
           <div class="intro-value">
             <img
-              src="./assets/images/svg/hard-hat.svg"
+              src="/assets/images/svg/hard-hat.svg"
               alt=""
               class="value-icon"
             />
@@ -59,7 +55,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
           <div class="intro-value">
             <img
-              src="./assets/images/svg/handshake.svg"
+              src="/assets/images/svg/handshake.svg"
               alt=""
               class="value-icon"
             />
@@ -85,17 +81,19 @@ import BaseLayout from "../layouts/BaseLayout.astro";
               <div class="service-image">
                 <img
                   src="/assets/images/services/4tak-tjeneste-1.png"
-                  alt="Taktekking"
+                  alt="Isolasjonsplater og takmaterialer på et flatt tak"
                 />
               </div>
 
               <div class="service-content">
-                <span class="service-number">01</span>
+                <span class="service-number" aria-hidden="true">
+                  01
+                </span>
                 <h3>Taktekking og isolering</h3>
                 <p>Solide løsninger tilpasset bygget og behovene dine.</p>
-                <span class="service-btn"
-                  >Les mer
-                  <span>&gt;</span>
+                <span class="service-btn">
+                  Les mer
+                  <span aria-hidden="true">&gt;</span>
                 </span>
               </div>
             </a>
@@ -105,20 +103,22 @@ import BaseLayout from "../layouts/BaseLayout.astro";
             <a class="service-card-link" href="/services/grytetekking">
               <div class="service-image">
                 <img
-                  src="assets/images/services/4tak-tjeneste-2.png"
-                  alt="Service og vedlikehold"
+                  src="/assets/images/services/4tak-tjeneste-2.png"
+                  alt="Påføring av varm asfalt på en takflate"
                 />
               </div>
 
               <div class="service-content">
-                <span class="service-number">02</span>
+                <span class="service-number" aria-hidden="true">
+                  02
+                </span>
                 <h3>Grytetekking</h3>
                 <p>
                   Slitesterke og vanntette løsninger med varm asfalt for
-                  langvarig beskyttelse
+                  langvarig beskyttelse.
                 </p>
                 <span class="service-btn">
-                  Les mer <span>&gt;</span>
+                  Les mer <span aria-hidden="true">&gt;</span>
                 </span>
               </div>
             </a>
@@ -128,19 +128,21 @@ import BaseLayout from "../layouts/BaseLayout.astro";
             <a class="service-card-link" href="/services/takforvaltning">
               <div class="service-image">
                 <img
-                  src="assets/images/services//4tak-tjeneste-3.png"
-                  alt="Rehabilitering"
+                  src="/assets/images/services/4tak-tjeneste-3.png"
+                  alt="Taktekker som arbeider med membran på et flatt tak"
                 />
               </div>
 
               <div class="service-content">
-                <span class="service-number">03</span>
+                <span class="service-number" aria-hidden="true">
+                  03
+                </span>
                 <h3>Takforvaltning</h3>
                 <p>
                   Vi gir eldre tak nytt liv og sørger for en løsning som varer.
                 </p>
                 <span class="service-btn">
-                  Les mer <span>&gt;</span>
+                  Les mer <span aria-hidden="true">&gt;</span>
                 </span>
               </div>
             </a>
@@ -148,7 +150,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
         </div>
 
         <a class="btn more-services" href="/services">
-          Se alle våre tjenester <span>&gt;</span>
+          Se alle våre tjenester <span aria-hidden="true">&gt;</span>
         </a>
       </div>
     </section>
@@ -157,7 +159,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       <div class="container">
         <div class="partners-header">
           <p class="partners-label">Leverandører</p>
-          <h2>Våre Leverandører</h2>
+          <h2>Våre leverandører</h2>
           <p>
             Vi samarbeider med etablerte leverandører for å sikre solide
             løsninger og materialer av høy kvalitet.
@@ -166,31 +168,50 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
         <div class="partners-list">
           <div class="partner">
-            <img src="assets/images/partners/vidar-hansen-logo.png" alt="" />
+            <img
+              src="/assets/images/partners/vidar-hansen-logo.png"
+              alt="Blikkenslagermester Vidar Hansen AS"
+            />
           </div>
 
           <div class="partner">
-            <img src="assets/images/partners/protan-logo.png" alt="" />
+            <img src="/assets/images/partners/protan-logo.png" alt="Protan" />
           </div>
 
           <div class="partner">
-            <img src="assets/images/partners/rockwool-logo.png" alt="" />
+            <img
+              src="/assets/images/partners/rockwool-logo.png"
+              alt="Rockwool"
+            />
           </div>
 
           <div class="partner">
-            <img src="assets/images/partners/takleverandoren-logo.png" alt="" />
+            <img
+              src="/assets/images/partners/takleverandoren-logo.png"
+              alt="Tak-leverandøren AS"
+            />
           </div>
 
           <div class="partner">
-            <img src="assets/images/partners/kingspan-logo.webp" alt="" />
+            <img
+              src="/assets/images/partners/kingspan-logo.webp"
+              alt="Kingspan"
+            />
           </div>
 
           <div class="partner">
-            <img src="assets/images/partners/sundolitt-logo.webp" alt="" />
+            <img
+              src="/assets/images/partners/sundolitt-logo.webp"
+              alt="Sundolitt"
+            />
           </div>
 
           <div class="partner">
-            <img src="assets/images/partners/SFS-logo.webp" alt="" />
+            <img src="/assets/images/partners/SFS-logo.webp" alt="SFS" />
+          </div>
+
+          <div class="partner">
+            <img src="/assets/images/partners/mataki-logo.svg" alt="Mataki" />
           </div>
         </div>
       </div>

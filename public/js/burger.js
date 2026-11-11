@@ -1,4 +1,3 @@
-
 const hamburgerBtn = document.querySelector(".hamburger-btn");
 const navMenu = document.querySelector(".nav-menu");
 
@@ -10,17 +9,14 @@ if (hamburgerBtn && navMenu && menuOverlay) {
   // Åpner eller lukker menyen
   function setMenuOpen(isOpen) {
     hamburgerBtn.setAttribute("aria-expanded", String(isOpen));
-    hamburgerBtn.setAttribute(
-      "aria-label",
-      isOpen ? "Lukk meny" : "Åpne meny"
-    );
+    hamburgerBtn.setAttribute("aria-label", isOpen ? "Lukk meny" : "Åpne meny");
 
     hamburgerBtn.classList.toggle("is-open", isOpen);
     navMenu.classList.toggle("is-open", isOpen);
     menuOverlay.classList.toggle("is-open", isOpen);
 
     // Hindrer scrolling bak menyen når den er åpen
-  document.body.classList.toggle("menu-open", isOpen);
+    document.body.classList.toggle("menu-open", isOpen);
   }
 
   // Åpner og lukker menyen ved klikk

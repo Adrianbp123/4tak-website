@@ -1,5 +1,5 @@
 ---
-const pathname = Astro.url.pathname;
+const pathname = Astro.url.pathname.replace(/\/+$/, "") || "/";
 ---
 
 <header>
@@ -15,9 +15,9 @@ const pathname = Astro.url.pathname;
       aria-controls="main-navigation"
       aria-expanded="false"
     >
-      <span class="hamburger-line"></span>
-      <span class="hamburger-line"></span>
-      <span class="hamburger-line"></span>
+      <span class="hamburger-line" aria-hidden="true"></span>
+      <span class="hamburger-line" aria-hidden="true"></span>
+      <span class="hamburger-line" aria-hidden="true"></span>
     </button>
 
     <nav class="nav-menu" id="main-navigation" aria-label="Hovedmeny">
@@ -60,7 +60,7 @@ const pathname = Astro.url.pathname;
           <img src="/assets/images/icons/4tak-ikoner/phone.png" alt="" />
 
           <div class="menu-phone-info">
-            <span class="menu-phone-title">Ring Oss</span>
+            <span class="menu-phone-title">Ring oss</span>
             <span>92 85 86 10</span>
           </div>
         </a>

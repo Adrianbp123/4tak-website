@@ -4,7 +4,7 @@
   padding-top: 5rem;
 
   background-image:
-    linear-gradient(rgba(6, 26, 48, 0.856), rgba(6, 26, 48, 0.342)),
+    linear-gradient(rgba(6, 26, 48, 0.7), rgba(6, 26, 48, 0.3)),
     url("/assets/images/hero/mobile-hero.jpeg");
 
   background-size: cover;
@@ -14,7 +14,7 @@
 }
 
 .hero-content {
-  color: white;
+  color: var(--text-light);
 
   animation: slide-in 0.8s ease-out;
 }
@@ -26,24 +26,20 @@
 }
 
 .hero-content p {
-    margin-top: 1rem;
+  margin-top: 1rem;
 }
-
 
 .hero-btn {
   margin-top: 2rem;
 
   background-color: rgba(6, 26, 48, 0.618);
-  color: white;
+  color: var(--text-light);
   border: 1px solid rgba(255, 255, 255, 0.8);
 }
 
 .hero-btn:hover {
   background-color: var(--primary-hover);
 }
-
-
-
 
 .hero-btns {
   display: flex;
@@ -68,8 +64,8 @@
 @media (min-width: 768px) {
   .hero {
     background-image:
-    linear-gradient(rgba(6, 26, 48, 0.65), rgba(6, 26, 48, 0.35)),
-    url("/assets/images/hero/desktop-hero.png");
+      linear-gradient(rgba(6, 26, 48, 0.65), rgba(6, 26, 48, 0.35)),
+      url("/assets/images/hero/desktop-hero.png");
   }
 
   .hero-content {
@@ -77,12 +73,9 @@
   }
 
   .hero-btn {
-  margin-top: 1.5rem;
-
- 
+    margin-top: 1.5rem;
+  }
 }
-}
-
 
 @media (max-width: 359px) {
   .hero-content h1 {

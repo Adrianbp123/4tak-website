@@ -21,8 +21,10 @@ header .container {
   color: var(--primary-color);
 }
 
-
 .nav-menu {
+  display: flex;
+  flex-direction: column;
+
   position: fixed;
   top: 0;
   right: 0;
@@ -33,7 +35,6 @@ header .container {
 
   background-color: var(--header-color);
   box-shadow: 10px 0 30px rgba(0, 0, 0, 0.15);
-  
 
   transform: translateX(100%);
   visibility: hidden;
@@ -42,9 +43,7 @@ header .container {
     transform 0.3s ease,
     visibility 0.3s;
 
-  overflow-x: hidden;
-  overflow-y: auto;
-  overscroll-behavior: contain;
+  overflow: hidden;
 }
 
 .nav-menu.is-open {
@@ -54,7 +53,6 @@ header .container {
 
 body.menu-open {
   overflow: hidden;
-  overscroll-behavior: none;
 }
 
 .menu-overlay {
@@ -107,8 +105,6 @@ body.menu-open {
   border-radius: 2px;
 }
 
-
-
 /* Animerer linjene */
 .hamburger-line {
   transition:
@@ -131,11 +127,9 @@ body.menu-open {
   transform: translateY(-7px) rotate(-45deg);
 }
 
-
 /* Kontaktinformasjon i mobilmenyen */
 .menu-contact {
-  margin: 2rem 1.5rem 0;
-  
+  margin: 2rem 1.5rem;
 }
 
 .menu-contact-label {
@@ -182,83 +176,71 @@ body.menu-open {
   color: var(--primary-color);
 }
 
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 1.5rem 0;
+}
 
-    .nav-list {
-        display: flex;
-        flex-direction: column;
-        gap: 0rem;
-      padding: 4rem 1.5rem 0;
+.nav-link {
+  display: block;
+  padding: 2rem 0;
+  color: var(--secondary-color);
+  font-weight: 600;
+  transition: color 0.2s ease;
+  border-bottom: 1px solid #a3a7af;
+}
 
-    }
+.nav-link:hover {
+  color: var(--primary-color);
+}
 
-    .nav-link {
-      display: block;
-      padding: 2rem 0;
-      color: var(--secondary-color);
-      font-weight: 600;
-      transition: color 0.2s ease;
-      border-bottom: 1px solid #a3a7af;
-    }
+.menu-mascot {
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: -15px;
 
-    .nav-link:hover {
-        color: var(--primary-color);
-    }
+  width: min(300px, 80%);
+  height: auto;
 
-    .menu-mascot {
-      position: absolute;
-      right: -15px;
-      top: 500px;
+  pointer-events: none;
+  opacity: 0;
+  transform: translateX(100%);
+}
 
-      width: 300px;
-      height: auto;
+.nav-menu.is-open .menu-mascot {
+  animation: mascot-enter 0.7s ease-out 0.15s forwards;
+}
 
-      pointer-events: none;
-      opacity: 0;
-      transform: translateX(100%);
+@keyframes mascot-enter {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  70% {
+    transform: translateX(-10px);
+    opacity: 1;
+  }
 
-      
-    }
-
-    .nav-menu.is-open .menu-mascot {
-      animation: mascot-enter 0.7s ease-out 0.15s forwards;
-    }
-
-    @keyframes mascot-enter {
-
-      0% { 
-        transform: translateX(100%);
-      opacity: 0; 
-    }
-      70% { transform: translateX(-10px);
-        opacity: 1;
-      
-      }
-
-      100% {
+  100% {
     opacity: 1;
     transform: translateX(0);
   }
-
-    }
-
-
-    
-
-   
-
+}
 
 @media (min-width: 1024px) {
   .hamburger-btn {
     display: none;
   }
 
-  .menu-contact {
+  .menu-contact,
+  .menu-mascot {
     display: none;
   }
 
   .nav-menu,
   .nav-menu.is-open {
-    display: block;
+    display: flex;
     position: static;
     width: auto;
     height: auto;
@@ -279,8 +261,6 @@ body.menu-open {
     padding: 0;
     border-bottom: 0;
   }
-
- 
 
   .menu-overlay {
     display: none;
