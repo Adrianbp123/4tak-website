@@ -4,7 +4,7 @@
   padding-top: 5rem;
 
   background-image:
-    linear-gradient(rgba(6, 26, 48, 0.70), rgba(6, 26, 48, 0.30)),
+    linear-gradient(rgba(6, 26, 48, 0.7), rgba(6, 26, 48, 0.3)),
     url("/assets/images/hero/mobile-hero.jpeg");
 
   background-size: cover;
@@ -26,9 +26,8 @@
 }
 
 .hero-content p {
-    margin-top: 1rem;
+  margin-top: 1rem;
 }
-
 
 .hero-btn {
   margin-top: 2rem;
@@ -41,9 +40,6 @@
 .hero-btn:hover {
   background-color: var(--primary-hover);
 }
-
-
-
 
 .hero-btns {
   display: flex;
@@ -68,8 +64,8 @@
 @media (min-width: 768px) {
   .hero {
     background-image:
-    linear-gradient(rgba(6, 26, 48, 0.65), rgba(6, 26, 48, 0.35)),
-    url("/assets/images/hero/desktop-hero.png");
+      linear-gradient(rgba(6, 26, 48, 0.65), rgba(6, 26, 48, 0.35)),
+      url("/assets/images/hero/desktop-hero.png");
   }
 
   .hero-content {
@@ -77,12 +73,9 @@
   }
 
   .hero-btn {
-  margin-top: 1.5rem;
-
- 
+    margin-top: 1.5rem;
+  }
 }
-}
-
 
 @media (max-width: 359px) {
   .hero-content h1 {

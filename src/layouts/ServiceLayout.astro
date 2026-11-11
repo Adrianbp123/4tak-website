@@ -44,7 +44,9 @@ const { title, breadcrumb, description, image, imageAlt, heading, paragraphs } =
 
           <h2>{heading}</h2>
 
-          {paragraphs.map((paragraph) => <p>{paragraph}</p>)}
+          {paragraphs.map((paragraph) => (
+            <p>{paragraph}</p>
+          ))}
         </div>
       </div>
     </section>

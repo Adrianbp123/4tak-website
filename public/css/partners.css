@@ -1,75 +1,65 @@
 .partners {
-    background-color: var(--bg-color);
-    padding-block: 4rem;
+  background-color: var(--bg-color);
+  padding-block: 4rem;
 }
 
 .partners-header {
-    margin-bottom: 3.5rem;
+  margin-bottom: 3.5rem;
 }
 
 .partners-label {
-    color: var(--primary-color);
-     text-transform: uppercase;
-    font-weight: 700;
+  color: var(--primary-color);
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 .partners-header h2 {
-    color: var(--secondary-color);
-    margin-top: 1rem;
+  color: var(--secondary-color);
+  margin-top: 1rem;
 }
-
-
 
 /* GRID */
 
 .partners-list {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 3rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 3rem;
 }
-
-
-
-
 
 /* LOGOER */
 
 .partner {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-width: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
 }
 
 .partner img {
-    width: 100%;
-    max-width: 160px;
-    height: 80px;
-    object-fit: contain;
+  width: 100%;
+  max-width: 160px;
+  height: 80px;
+  object-fit: contain;
 }
 
 .partner:nth-child(7) img {
-        max-width: 135px;
-    }
+  max-width: 135px;
+}
 
 /* DESKTOP */
 
-
 @media (min-width: 768px) {
-    .partners-list {
-        grid-template-columns: repeat(4, minmax(0, 1fr));
-        gap: 4rem 2rem;
-    }
+  .partners-list {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 4rem 2rem;
+  }
 
-    .partner {
-        padding-inline: 1rem;
-    }
+  .partner {
+    padding-inline: 1rem;
+  }
 
-    .partner img {
-        max-width: 260px;
-        height: 120px;
-    }
+  .partner img {
+    max-width: 260px;
+    height: 120px;
+  }
 }
-
-
-

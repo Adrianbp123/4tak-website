@@ -1,160 +1,145 @@
-
-
 .contact-layout {
-    gap: 2rem;
-    display: grid;
-    grid-template-columns: 1fr;
+  gap: 2rem;
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 .contact-list {
-    display: grid;
-    grid-template-columns: 1fr;
-    
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 .contact-item {
-    padding-block: 1.5rem;
+  padding-block: 1.5rem;
 }
 
-
-
 .contact-item:not(:last-child) {
-    border-bottom: 1px solid #d8d8d8;
+  border-bottom: 1px solid #d8d8d8;
 }
 
 .contact-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.8rem;
-    width: fit-content;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+  width: fit-content;
 }
 
 .contact-info {
-    display: flex;
-    flex-direction: column;
-    gap: 0.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
 }
 
-
 .contact-info h2 {
-    font-size: var(--h3);
-    color: var(--secondary-color);
+  font-size: var(--h3);
+  color: var(--secondary-color);
 }
 
 .contact-link img {
-    width: 60px;
-    height: 60px;
-    object-fit: contain;
-    flex-shrink: 0;
-    transition: transform 0.2s ease;
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  flex-shrink: 0;
+  transition: transform 0.2s ease;
 }
 
 /* Hover */
 .contact-link:hover .contact-info h2 {
-    color: var(--primary-color);
+  color: var(--primary-color);
 }
 
 .contact-link:hover img {
-    transform: translateY(-2px);
+  transform: translateY(-2px);
 }
 
 /* Tastaturnavigasjon */
 .contact-link:focus-visible {
-    outline: 2px solid var(--primary-color);
-    outline-offset: 4px;
-    border-radius: 4px;
+  outline: 2px solid var(--primary-color);
+  outline-offset: 4px;
+  border-radius: 4px;
 }
 
 /* Bilde */
 
-
 .contact-image {
-    
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
 
-
 .contact-image img {
-    max-width: 400px;
-    height: auto;
+  max-width: 400px;
+  height: auto;
 }
 
 /* Desktop */
 @media (min-width: 1024px) {
+  .contact-layout {
+    grid-template-columns: minmax(0, 1fr) 500px;
+    align-items: center;
+    gap: 3rem;
+    padding-bottom: 2rem;
+  }
 
+  .contact-list {
+    width: 100%;
+    max-width: 500px;
+  }
 
-   .contact-layout {
-        grid-template-columns: minmax(0, 1fr) 500px;
-        align-items: center;
-        gap: 3rem;
-        padding-bottom: 2rem;
-    }
+  .contact-item {
+    padding-block: 2rem;
+  }
 
-    .contact-list {
-        width: 100%;
-        max-width: 500px;
-    }
+  .contact-link {
+    gap: 2rem;
+  }
 
-    .contact-item {
-        padding-block: 2rem;
-    }
+  .contact-link img {
+    width: 100px;
+    height: 100px;
+  }
 
-    .contact-link {
-        gap: 2rem;
-    }
-
-    .contact-link img {
-        width: 100px;
-        height: 100px;
-    }
-
-    .contact-image img {
-        width: 100%;
-        max-width: none;
-        height: auto;
-        max-width: 500px;
-    }
-
-  
+  .contact-image img {
+    width: 100%;
+    max-width: none;
+    height: auto;
+    max-width: 500px;
+  }
 }
 
-
 .contact-team {
-    margin-top: 2rem;
+  margin-top: 2rem;
 }
 
 .contact-team p {
-    color: var(--muted-text);
-    margin-bottom: 0.5rem;
+  color: var(--muted-text);
+  margin-bottom: 0.5rem;
 }
 
 .contact-team a {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    color: var(--primary-color);
-    font-weight: 600;
-    text-decoration: none;
-    transition: color 0.25s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--primary-color);
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.25s ease;
 }
 
 .contact-team a span {
-    transition: transform 0.2s ease;
+  transition: transform 0.2s ease;
 }
 
 .contact-team a:hover span {
-    transform: translateX(4px);
+  transform: translateX(4px);
 }
 
 .contact-team a:hover {
-    color: var(--primary-hover);
+  color: var(--primary-hover);
 }
 
 .contact-team a:focus-visible {
-    outline: 2px solid var(--primary-color);
-    outline-offset: 4px;
+  outline: 2px solid var(--primary-color);
+  outline-offset: 4px;
 }

@@ -7,8 +7,10 @@ interface Props {
   description?: string;
 }
 
-const { title, description = "4Tak AS er en landsdekkende takentreprenør som leverer taktekking, isolering og solide takløsninger tilpasset ditt prosjekt." } =
-  Astro.props;
+const {
+  title,
+  description = "4Tak AS er en landsdekkende takentreprenør som leverer taktekking, isolering og solide takløsninger tilpasset ditt prosjekt.",
+} = Astro.props;
 ---
 
 <!doctype html>
@@ -25,20 +27,27 @@ const { title, description = "4Tak AS er en landsdekkende takentreprenør som le
 
     <meta name="description" content={description} />
     <link rel="canonical" href={Astro.url.href} />
-<meta property="og:url" content={Astro.url.href} />
+    <meta property="og:url" content={Astro.url.href} />
     <meta property="og:type" content="website" />
-<meta property="og:title" content={title === "Forside" ? "4Tak AS | Landsdekkende takentreprenør" : `${title} | 4Tak AS`} />
-<meta property="og:description" content={description} />
-<meta property="og:locale" content="nb_NO" />
+    <meta
+      property="og:title"
+      content={
+        title === "Forside"
+          ? "4Tak AS | Landsdekkende takentreprenør"
+          : `${title} | 4Tak AS`
+      }
+    />
+    <meta property="og:description" content={description} />
+    <meta property="og:locale" content="nb_NO" />
 
-<meta
-  property="og:image"
-  content="https://4tak.no/assets/images/branding/4tak-og-image.png"
-/>
-<meta
-  property="og:image:alt"
-  content="4Tak AS-logo og illustrasjon av en vinkende takarbeider"
-/>
+    <meta
+      property="og:image"
+      content="https://4tak.no/assets/images/branding/4tak-og-image.png"
+    />
+    <meta
+      property="og:image:alt"
+      content="4Tak AS-logo og illustrasjon av en vinkende takarbeider"
+    />
 
     <title>
   {title === "Forside"
